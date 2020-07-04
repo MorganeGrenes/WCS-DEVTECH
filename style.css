@@ -4,7 +4,7 @@ body {
 	font-weight: 50;
 	font-size: 20px;
 	color: black;
-	background-color: #FCF4D2;
+	background-color: #dbdbdb;
 	 
 }
 
@@ -104,7 +104,7 @@ td, th {
 	width: 75%;
 	height: 400 px;
 	background-color: rgba(255, 255, 255, 1);
-	box-shadow: 0px 5px #f7f7f7;
+	box-shadow: 0px 3px #e4e1e1;
 	margin-top: 50px;
 	margin-bottom: 50px;
 	display: flex;
@@ -149,3 +149,17 @@ td, th {
 	width: 100%;
 }
 
+.form-row {
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.formcontainer {
+	align-items: center;
+}
+
+.contactform {
+	width: 400px;
+	margin: 50px;
+}

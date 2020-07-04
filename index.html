@@ -86,16 +86,27 @@
                     </table>
                 </div>
                 <!-- Contact the Royal Kingdom -->
-                <p id="contactus">
-                  Fill in the form below to contact the Royal Kingdom
-                </p>
-                Name...
-                Email...
-                Message...
-                Submit...
-
-                <!-- Connect the Javascript file -->
-                <script src="script.js"></script>
+                <div class="globalcontainer formcontainer">
+                    <h2 class="h2-content" id="contactus">
+                      Fill in the form below to contact the Royal Kingdom
+                    </h2>
+                    <form class="contactform" >
+                        <div class="form-row">
+                            <label for="name">First name:</label>
+                            <input type="text" id="name" name="name" placeholder="name">
+                        </div>
+                        <div class="form-row">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="email">
+                        </div>
+                        <div class="form-row">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" placeholder="message"></textarea>
+                        </div>
+                        <input type="submit" value="Submit">
+                    </form>
+                    <script src="script.js"></script>
+                </div>
             </div>
         </div>
     </body>
