@@ -1,6 +1,11 @@
+@font-face {
+    font-family: Roboto-Regular;
+    src: url('Ressources/font/Roboto-Regular.ttf');
+}
+
 body {
 	margin: 0px;
-	font-family: arial;
+	font-family: Roboto-Regular, arial, sans-serif;
 	font-weight: 50;
 	font-size: 20px;
 	color: black;
@@ -45,6 +50,51 @@ table {
 td, th {
     border: 1px solid black;
     text-align: center;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #f09e1a;
+  border-radius: 4px;
+  background-color: #fff0ab;
+  color: white;
+}
+
+input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #f09e1a;
+  border-radius: 4px;
+  background-color: #fff0ab;
+  color: white;
+}
+
+input[type=text]:focus {
+  border: 3px solid #00ffe1;
+}
+
+input[type=email]:focus {
+  border: 3px solid #00ffe1;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #f09e1a;
+  border-radius: 4px;
+  background-color: #fff0ab;
+  resize: none;
+}
+
+textarea:focus {
+	border: 3px solid #00ffe1;
 }
 
 .principal-container{
@@ -150,9 +200,8 @@ td, th {
 }
 
 .form-row {
-	display: flex;
-	justify-content: space-between;
-	
+	margin: 20px;
+	width: 100%;
 }
 
 .formcontainer {
@@ -160,6 +209,17 @@ td, th {
 }
 
 .contactform {
-	width: 400px;
-	margin: 50px;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#submit {
+	width: 25%;
+	margin-bottom: 50px;
+	padding: 5px;
+	border: 2px solid #f09e1a;
+	border-radius: 4px;
+	background-color: #fff0ab;
 }
